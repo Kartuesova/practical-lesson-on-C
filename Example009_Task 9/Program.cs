@@ -1,2 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+Console.Clear();
+System.Console.WriteLine();
+
+int Number = new Random().Next(100, 1000);
+int NewNumber = 0;
+
+int NumberWithoutSecDig()
+{
+    NewNumber = Number / 100 * 10 + Number % 10;
+    return NewNumber;
+}
+
+NumberWithoutSecDig();
+
+System.Console.WriteLine();
+System.Console.WriteLine($"{Number} итог {NewNumber}");
+System.Console.WriteLine();
