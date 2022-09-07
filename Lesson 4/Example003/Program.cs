@@ -15,29 +15,29 @@ while( j < N){
 }
 
 // Второй вариант
-int n = 10946;
-int fibon1 = 0;
-int fibon2 = 1;
-Console.Write("0 1" + " ");
-while (fibon2 <= n - fibon1)
-{
-int temp = fibon2;
-fibon2 = fibon2 + fibon1;
-fibon1 = temp;
-Console.Write(fibon2 + " ");
-}
+// int n = 10946;
+// int fibon1 = 0;
+/// int fibon2 = 1;
+// Console.Write("0 1" + " ");
+// while (fibon2 <= n - fibon1)
+// {
+// int temp = fibon2;
+// fibon2 = fibon2 + fibon1;
+// fibon1 = temp;
+// Console.Write(fibon2 + " ");
+// }
 
 // Третий вариант
-int[] fibonacci = new int[1000];
-fibonacci[0] = 1;
-fibonacci[1] = 1;
-int n = int.Parse(Console.ReadLine() ?? "0");
-Console.Write($"{fibonacci[0]} {fibonacci[1]} ");
-int index = 1;
-while(fibonacci[index]<n)
-{
-    index++;
-    fibonacci[index]=fibonacci[index-1]+fibonacci[index-2];
-    if(fibonacci[index]<n)
-        Console.Write($"{fibonacci[index]} ");
-}
+// int[] fibonacci = new int[1000];
+// fibonacci[0] = 1;
+// fibonacci[1] = 1;
+// int n = int.Parse(Console.ReadLine() ?? "0");
+// Console.Write($"{fibonacci[0]} {fibonacci[1]} ");
+// int index = 1;
+// while(fibonacci[index]<n)
+// {
+    // index++;
+    // fibonacci[index]=fibonacci[index-1]+fibonacci[index-2];
+    // if(fibonacci[index]<n)
+       // Console.Write($"{fibonacci[index]} ");
+// }
